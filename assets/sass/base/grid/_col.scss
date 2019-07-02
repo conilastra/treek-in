@@ -1,0 +1,85 @@
+@mixin set-column {
+    background-color: lighten($black, 70%);
+    padding: 5px;
+
+    @media (min-width: 700px) and (max-width: 800px) {
+        background-color: blueviolet; 
+        color: white; 
+    }
+}
+
+@mixin set-col {
+    @for $i from 1 through 12 {
+        .col-#{$i} {
+            @include set-column();
+            grid-column: span #{$i};
+            
+        }
+    }
+}
+
+
+@mixin set-col-sm {
+    @for $i from 1 through 12 {
+        .col-sm-#{$i} {
+            @include set-column();
+            grid-column: span #{$i};
+            
+        }
+    }
+}
+
+
+@mixin set-col-md {
+    @for $i from 1 through 12 {
+        .col-md-#{$i} {
+            @include set-column();
+            grid-column: span #{$i};
+            
+        }
+    }
+}
+
+@mixin set-col-lg {
+    @for $i from 1 through 12 {
+        .col-lg-#{$i} {
+            @include set-column();
+            grid-column: span #{$i};
+            
+        }
+    }
+}
+
+@mixin set-col-xl {
+    @for $i from 1 through 12 {
+        .col-xl-#{$i} {
+            @include set-column();
+            grid-column: span #{$i};
+            
+        }
+    }
+}
+
+
+.container {
+    .row {
+        @include set-col();
+
+        @media screen and (min-width: $viewport-sm) {
+            @include set-col-sm();
+        }
+        
+        @media screen and (min-width: $viewport-md) {
+            @include set-col-md();
+        }
+
+        @media screen and (min-width: $viewport-lg) {
+            @include set-col-lg();
+        }
+
+        @media screen and (min-width: $viewport-xl) {
+            @include set-col-xl();
+        }
+
+    }
+}
