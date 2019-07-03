@@ -1,0 +1,13 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+
+    &__navbar {
+        display: none;
+
+        ul li {
+            display: inline;
+        }
+    }
+}
