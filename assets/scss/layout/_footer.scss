@@ -40,9 +40,17 @@ footer {
 
 @media (min-width: 1200px) {
     footer {
-        .row {
-            display: flex;
-            justify-content: space-between;
-        } 
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+
+        .footer__nav {
+            width: 30vw;
+            justify-content: space-around;
+        }
+
+        .footer__rights {
+            justify-content: right;
+        }
     }
 }

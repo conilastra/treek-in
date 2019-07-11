@@ -17,35 +17,15 @@
         font-size: $small;
         line-height: 1.6;
         padding: 1rem 1.5rem;
-        border-top: 1px solid gray;
-        border-bottom: 1px solid gray;
+        border-top: 1px solid $spanish-gray;
+        border-bottom: 1px solid $spanish-gray;
 
         li {
             padding: .5rem 1rem;
         }
 
         &--short {
-            padding-bottom: 6.6rem;
-        }
-    }
-
-    &__buttons {
-        width: 100%;
-        border: none;
-        background: $ball-blue;
-        color: $white;
-        padding: 1rem;
-        font-size: $medium;
-        margin-top: 1.5rem;
-        font-family: $raleway;
-        font-weight: $bold;
-
-        &--hover:hover {
-            background: $middle-blue;
-        }
-
-        &--focus:focus {
-            background: $spanish-gray;
+            padding-bottom: 8.2rem;
         }
     }
 

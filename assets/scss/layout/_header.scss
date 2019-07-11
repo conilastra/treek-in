@@ -15,12 +15,42 @@
 }
 
 @media (min-width: 1200px) {
-    .header__navbar {
-        display: initial;
-    }
+    .header {
+        padding: 2rem 5rem 2rem 8rem;
 
-    .header__navbar--burger {
-        display: none;
+        &--right {
+            display: flex;
+            align-items: center;
+        }
+
+        &__navbar {
+            display: flex;
+            font-family: $open-sans;
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+                width: 22vw;
+            }
+            
+
+            &--burger {
+                display: none;
+            }
+        }
+
+        &__buttons {
+            display: flex;
+            width: 17vw;
+            align-items: center;
+            justify-content: space-between;
+
+            a {
+                font-family: $open-sans;
+                color: inherit;
+                text-decoration: none;
+            }
+        }
     }
 
 }
