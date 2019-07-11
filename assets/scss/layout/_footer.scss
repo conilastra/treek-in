@@ -28,6 +28,16 @@ footer {
     
 }
 
+
+@media (min-width: 768px) {
+   footer {
+    .footer__nav {
+        justify-content: space-evenly;
+    }
+   }
+}
+
+
 @media (min-width: 1200px) {
     footer {
         .row {
