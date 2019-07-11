@@ -1,16 +1,38 @@
 footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
+    padding: 2rem;
     background: $raising-black;
     color: $white;
     font-family: $open-sans;
+    font-weight: $regular;
+    width: 100vw;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    font-weight: $regular;
 
-    &__nav {
-        padding: 1rem;
+    h6 {
+        font-weight: $regular;
+        font-size: $small;
+    }
+
+    .footer__nav {
+        display: flex;
+        justify-content: space-between;
+        width: 80vw;
+    }
+
+    .footer__rights {
+        display: flex;
+        justify-content: center;
+        width: 80vw;
     }
     
+}
+
+@media (min-width: 1200px) {
+    footer {
+        .row {
+            display: flex;
+            justify-content: space-between;
+        } 
+    }
 }

@@ -21,29 +21,28 @@
 
 <body>
     <header class="header container">
-        <div class="row">
-            <div class="col-xs-2">
-                <svg class="header__logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <defs>
-                        <path id="a" d="M29 12.62h-9.795V40H9.843V12.62H0V4h29z" />
-                        <path
-                            d="M35 13V4h1v9h-1zm0-11V0h1v2h-1zm13 11h-1.748V8.05c0-.948-.17-1.638-.507-2.067-.338-.43-.851-.644-1.54-.644-.357 0-.715.06-1.073.178-.357.119-.695.28-1.013.483a3.679 3.679 0 0 0-.834.729 2.957 2.957 0 0 0-.537.932V13H39V4.153h1.59V6.05c.41-.622 1.003-1.119 1.778-1.492A5.764 5.764 0 0 1 44.9 4c.596 0 1.092.093 1.49.28a2.4 2.4 0 0 1 .953.78c.239.333.408.725.507 1.177.1.452.149.944.149 1.475V13z"
-                            id="b" />
-                    </defs>
-                    <g fill="none" fill-rule="evenodd">
-                        <g>
-                            <use fill="#FFF" xlink:href="#a" />
-                            <use fill="#011627" xlink:href="#a" />
-                        </g>
-                        <g>
-                            <use fill="#FFF" xlink:href="#b" />
-                            <use fill="#000" xlink:href="#b" />
-                        </g>
-                    </g>
-                </svg>
-            </div>
 
-            <div class="header__navbar--burger"></div>
+        <svg class="header__logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <defs>
+                <path id="a" d="M29 12.62h-9.795V40H9.843V12.62H0V4h29z" />
+                <path
+                    d="M35 13V4h1v9h-1zm0-11V0h1v2h-1zm13 11h-1.748V8.05c0-.948-.17-1.638-.507-2.067-.338-.43-.851-.644-1.54-.644-.357 0-.715.06-1.073.178-.357.119-.695.28-1.013.483a3.679 3.679 0 0 0-.834.729 2.957 2.957 0 0 0-.537.932V13H39V4.153h1.59V6.05c.41-.622 1.003-1.119 1.778-1.492A5.764 5.764 0 0 1 44.9 4c.596 0 1.092.093 1.49.28a2.4 2.4 0 0 1 .953.78c.239.333.408.725.507 1.177.1.452.149.944.149 1.475V13z"
+                    id="b" />
+            </defs>
+            <g fill="none" fill-rule="evenodd">
+                <g>
+                    <use fill="#FFF" xlink:href="#a" />
+                    <use fill="#011627" xlink:href="#a" />
+                </g>
+                <g>
+                    <use fill="#FFF" xlink:href="#b" />
+                    <use fill="#000" xlink:href="#b" />
+                </g>
+            </g>
+        </svg>
+
+        <div>
+            <div class="header__navbar--burger"><i class="fas fa-bars fa-2x"></i></div>
             <nav class="header__navbar">
                 <ul>
                     <li>Acerca de</li>
@@ -53,15 +52,16 @@
             </nav>
             <div class="header__buttons"></div>
         </div>
+
     </header>
 
 
     <main>
         <section class="intro container">
             <div class="row">
-                <div class="col-xs-12 col-lg-6">
-                    <h1 class="intro__title">Haz Trekking sin Parar</h1>
-                    <p class="intro__text">Con Trekk-in te despreocuparás de la estimación de tu viaje, ya que con unos
+                <div class="intro__content col-12 col-lg-6">
+                    <h1>Haz Trekking sin Parar</h1>
+                    <p>Con Trekk-in te despreocuparás de la estimación de tu viaje, ya que con unos
                         simples pasos podrás
                         definir
                         la mejor ruta a tomar con tus compañeros de expedición</p>
@@ -71,33 +71,32 @@
 
         <section class="intro__bg-hero"></section>
 
-
         <section class="features container">
             <h2 class="features__title">Características</h2>
-            <div class="features__content">
-                <div class="row">
-                    <div class="col-xs-12 col-lg-4 features__content__graph">
-                        <svg class="features__content__graph__img" viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
-                            <g class="bar-graph" fill-rule="evenodd">
-                                <path class="a-bar" fill="#EE9480"
-                                    d="M10.949 53h34.778v108H10.949zM63.613 0h34.778v161H63.613zm52.663 32h34.778v129h-34.778z" />
-                                <path class="b-bar" fill="#2AB7CA"
-                                    d="M168.94 53h34.778v108H168.94zm52.663-25h34.778v133h-34.778zm52.664 45h34.778v88h-34.778z" />
-                                <path class="plane" d="M3 162.5h312.503" stroke="#979797" stroke-width="5"
-                                    stroke-linecap="square" />
-                            </g>
-                        </svg>
-                    </div>
 
-                    <div class="features__content__text col-xs-12 col-lg-4">
-                        <h3>Estadísticas de tu progreso</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam non aut totam neque hic
-                            debitis
-                            suscipit corporis eaque rerum ea cumque temporibus cum fugit quo soluta quis, nam
-                            perspiciatis
-                        </p>
-                    </div>
+            <div class="row">
+                <div class="col-12 col-lg-4 features__graph">
+                    <svg class="features__graph__img" viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+                        <g class="bar-graph" fill-rule="evenodd">
+                            <path class="a-bar" fill="#EE9480"
+                                d="M10.949 53h34.778v108H10.949zM63.613 0h34.778v161H63.613zm52.663 32h34.778v129h-34.778z" />
+                            <path class="b-bar" fill="#2AB7CA"
+                                d="M168.94 53h34.778v108H168.94zm52.663-25h34.778v133h-34.778zm52.664 45h34.778v88h-34.778z" />
+                            <path class="plane" d="M3 162.5h312.503" stroke="#979797" stroke-width="5"
+                                stroke-linecap="square" />
+                        </g>
+                    </svg>
                 </div>
+
+                <div class="features__text col-12 col-lg-4">
+                    <h3>Estadísticas de tu progreso</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam non aut totam neque hic
+                        debitis
+                        suscipit corporis eaque rerum ea cumque temporibus cum fugit quo soluta quis, nam
+                        perspiciatis
+                    </p>
+                </div>
+
             </div>
         </section>
 
@@ -107,24 +106,24 @@
 
         <section class="prices container">
             <div class="row">
-                <article class="prices__card col-xs-12 col-lg-4">
+                <article class="prices__card">
                     <h4 class="prices__card__title">Trekk-in Free</h4>
                     <h3 class="prices__card__price">$ 0 / mes</h3>
-                    <hr>
-                    <ul class="prices__card__list">
+
+                    <ul class="prices__card__list prices__card__list--short">
                         <li>Ver mapas creado por usuarios</li>
                         <li>Concretar con otros usuarios</li>
                     </ul>
-                    <hr>
+
                     <button
                         class="prices__card__buttons prices__card__buttons--hover prices__card__buttons--focus">Obtén
                         free</button>
                 </article>
 
-                <article class="prices__card col-xs-12 col-lg-4">
+                <article class="prices__card">
                     <h4 class="prices__card__title">Trekk-in Free</h4>
                     <h3 class="prices__card__price">$ 3500 / mes</h3>
-                    <hr>
+
                     <ul class="prices__card__list">
                         <li>Ver mapas creado por usuarios</li>
                         <li>Concretar con otros usuarios</li>
@@ -132,7 +131,7 @@
                         <li>Mapas Offline</li>
                         <li>Integración con otras aplicaciones</li>
                     </ul>
-                    <hr>
+
                     <button
                         class="prices__card__buttons prices__card__buttons--hover prices__card__buttons--focus">Obtén
                         Premium</button>
@@ -141,16 +140,14 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer>
         <div class="footer__nav">
-            <a>Legal</a>
-            <a>Cookies</a>
-            <a>Sobre anuncios</a>
+            <h6>Legal</h6>
+            <h6>Cookies</h6>
+            <h6>Sobre anuncios</h6>
         </div>
 
-        <h6 class="footer__rights">2018 Trekk-in SPA</h6>
-        </div>
-
+        <h6 class="footer__rights">© 2018 Trekk-in SPA</h6>
     </footer>
 </body>
 

@@ -16,9 +16,21 @@
     transform: translateY(-5%);
 }
 
+@media (min-width: 1200px) {
+    .intro__bg-hero {
+        background-position: 0%;
+        background-size: cover;
+        height: 110vh;
+        transform: translateY(-35%);
+    }
+}
+
+
 
 /* gráfico */
-.features__content__graph__img {
+.features__graph__img {
+    padding-top: 2rem; 
+    
     svg {
         height: 28vh;
     } 
@@ -52,3 +64,9 @@
     padding: 7rem;
 }
 
+@media (min-width: 1200px) {
+    .prices-bg {
+        background-position: 96% 14%;
+        background-size: 100%;
+    }
+}

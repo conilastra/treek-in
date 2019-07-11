@@ -2,6 +2,8 @@
     display: flex;
     justify-content: space-between;
     padding: 2.5rem;
+    align-items: center;
+    width: 100vw;
 
     &__navbar {
         display: none;
@@ -10,4 +12,15 @@
             display: inline;
         }
     }
+}
+
+@media (min-width: 1200px) {
+    .header__navbar {
+        display: initial;
+    }
+
+    .header__navbar--burger {
+        display: none;
+    }
+
 }

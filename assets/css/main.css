@@ -104,17 +104,28 @@ p {
   transform: translateY(-5%);
 }
 
+@media (min-width: 1200px) {
+  .intro__bg-hero {
+    background-position: 0%;
+    background-size: cover;
+    height: 110vh;
+    transform: translateY(-35%);
+  }
+}
 /* gráfico */
-.features__content__graph__img svg {
+.features__graph__img {
+  padding-top: 2rem;
+}
+.features__graph__img svg {
   height: 28vh;
 }
-.features__content__graph__img .a-bar, .features__content__graph__img .plane {
+.features__graph__img .a-bar, .features__graph__img .plane {
   animation-name: appear;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
-.features__content__graph__img .b-bar {
+.features__graph__img .b-bar {
   animation-name: appear;
   animation-duration: 3s;
   animation-iteration-count: infinite;
@@ -135,11 +146,16 @@ p {
   padding: 7rem;
 }
 
+@media (min-width: 1200px) {
+  .prices-bg {
+    background-position: 96% 14%;
+    background-size: 100%;
+  }
+}
 .prices__card {
   border: 1px solid #BABABA;
   padding: 2rem;
   background: #fff;
-  height: 550px;
 }
 .prices__card__title {
   font-size: 20px;
@@ -150,10 +166,17 @@ p {
 }
 .prices__card__list {
   font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
   padding: 1rem 1.5rem;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
 }
 .prices__card__list li {
   padding: 0.5rem 1rem;
+}
+.prices__card__list--short {
+  padding-bottom: 6.6rem;
 }
 .prices__card__buttons {
   width: 100%;
@@ -162,7 +185,7 @@ p {
   color: #fff;
   padding: 1rem;
   font-size: 16px;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
 }
@@ -174,6 +197,10 @@ p {
 }
 
 /* Container */
+.container {
+  width: 100vw;
+}
+
 @media (min-width: 768px) {
   .container {
     width: 750px;
@@ -192,57 +219,52 @@ p {
   grid-row-gap: 3rem;
 }
 
-@media (min-width: 1200px) {
-  .row {
-    grid-column-gap: 4rem;
-  }
-}
 /* Columns */
-.col-xs-12 {
+.col-12 {
   grid-column: span 12;
 }
 
-.col-xs-11 {
+.col-11 {
   grid-column: span 11;
 }
 
-.col-xs-10 {
+.col-10 {
   grid-column: span 10;
 }
 
-.col-xs-9 {
+.col-9 {
   grid-column: span 9;
 }
 
-.col-xs-8 {
+.col-8 {
   grid-column: span 8;
 }
 
-.col-xs-7 {
+.col-7 {
   grid-column: span 7;
 }
 
-.col-xs-6 {
+.col-6 {
   grid-column: span 6;
 }
 
-.col-xs-5 {
+.col-5 {
   grid-column: span 5;
 }
 
-.col-xs-4 {
+.col-4 {
   grid-column: span 4;
 }
 
-.col-xs-3 {
+.col-3 {
   grid-column: span 3;
 }
 
-.col-xs-2 {
+.col-2 {
   grid-column: span 2;
 }
 
-.col-xs-1 {
+.col-1 {
   grid-column: span 1;
 }
 
@@ -348,6 +370,8 @@ p {
   display: flex;
   justify-content: space-between;
   padding: 2.5rem;
+  align-items: center;
+  width: 100vw;
 }
 .header__navbar {
   display: none;
@@ -356,6 +380,15 @@ p {
   display: inline;
 }
 
+@media (min-width: 1200px) {
+  .header__navbar {
+    display: initial;
+  }
+
+  .header__navbar--burger {
+    display: none;
+  }
+}
 section {
   padding: 0 2.5rem;
   width: 100vw;
@@ -369,33 +402,85 @@ section {
 }
 
 .prices {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   background: #333745;
   padding-bottom: 3rem;
   width: 100vw;
 }
+.prices .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+}
 
 @media (min-width: 1200px) {
-  .features__content, .prices {
+  .features,
+.prices {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
   }
-  .features__content .row, .prices .row {
+  .features .row,
+.prices .row {
     display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .features {
+    padding: 0 5rem;
+    transform: translateY(-80%);
+  }
+  .features__title {
+    width: 100vw;
+  }
+  .features__graph {
+    width: 30%;
+  }
+  .features__text {
+    width: 50%;
+  }
+
+  .intro__content {
+    position: relative;
+    float: left;
   }
 }
 footer {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem;
+  padding: 2rem;
   background: #221D23;
   color: #fff;
   font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  width: 100vw;
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  font-weight: 400;
 }
-footer__nav {
-  padding: 1rem;
+footer h6 {
+  font-weight: 400;
+  font-size: 14px;
+}
+footer .footer__nav {
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
+}
+footer .footer__rights {
+  display: flex;
+  justify-content: center;
+  width: 80vw;
+}
+
+@media (min-width: 1200px) {
+  footer .row {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
