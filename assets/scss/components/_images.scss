@@ -1,7 +1,12 @@
 /* logo */
 .header__logo {
     height: 10vh;
-    width: 6vw;
+}
+
+@media (min-width: 1200px) {
+    .header__logo {
+        width: 6vw;
+    }
 }
 
 /* hero */

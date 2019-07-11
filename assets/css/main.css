@@ -89,9 +89,13 @@ p {
 /* logo */
 .header__logo {
   height: 10vh;
-  width: 6vw;
 }
 
+@media (min-width: 1200px) {
+  .header__logo {
+    width: 6vw;
+  }
+}
 /* hero */
 .intro__bg-hero {
   background-image: url(../images/bg-hero.svg);
@@ -404,6 +408,9 @@ p {
 .header__navbar ul li {
   display: inline;
 }
+.header__buttons {
+  display: none;
+}
 
 @media (min-width: 1200px) {
   .header {
@@ -440,6 +447,10 @@ p {
 section {
   padding: 0 2.5rem;
   width: 100vw;
+}
+
+.intro .container {
+  max-width: 80vw;
 }
 
 .features {
