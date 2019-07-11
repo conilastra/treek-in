@@ -6,21 +6,24 @@ section {
 .features {
     padding-bottom: 4rem;
 
-    &__graph {
-        width: 75%; 
-    }
-
-    &__text {
-        width: 80%;
+    &__graph, &__text {
+        width: 100%; 
     }
 }
 
 .prices {
     background: $onyx;
     padding-bottom: 3rem; 
+    width: 100vw;
+}
 
-    &__title {
-        color: $white;
-        padding: 7rem;
+@media (min-width: 1200px) {
+    .features__content, .prices {
+        display: flex;
+        justify-content: center;
+
+        .row {
+            display: flex;
+        } 
     }
 }
