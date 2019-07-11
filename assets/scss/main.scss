@@ -3,8 +3,11 @@
 @import 'base/reset';
 @import 'base/grid';
 @import 'base/typography';
+@import 'base/keyframes';
 
 @import 'components/images';
+@import 'components/card';
 
 @import 'layout/header';
 @import 'layout/main-section';
+@import 'layout/footer';

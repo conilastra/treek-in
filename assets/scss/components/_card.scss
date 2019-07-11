@@ -1,0 +1,36 @@
+.prices__card {
+   border: 1px solid $gray; 
+   padding: 2rem;
+   background: $white;
+   height: 550px;
+
+   &__title {
+    font-size: $large;
+    font-weight: $regular;
+   }
+
+   &__price {
+    font-size: $xx-large;
+   }
+
+    &__list {
+        font-family: $open-sans;
+        padding: 1rem 1.5rem;
+
+        li {
+            padding: .5rem 1rem;
+        }
+    }
+
+    &__buttons {
+        width: 100%;
+        border: none;
+        background: $ball-blue;
+        color: $white;
+        padding: 1rem;
+        font-size: $medium;
+        margin-top: 1rem;
+        font-family: $raleway;
+        font-weight: $bold;
+    }
+}

@@ -5,9 +5,20 @@ section {
 
 .features {
     padding-bottom: 4rem;
+
+    &__graph {
+        width: 75%; 
+    }
+
+    &__text {
+        width: 80%;
+    }
 }
 
 .prices {
+    background: $onyx;
+    padding-bottom: 3rem; 
+
     &__title {
         color: $white;
         padding: 7rem;

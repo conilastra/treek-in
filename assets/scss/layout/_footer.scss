@@ -1,0 +1,16 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background: $raising-black;
+    color: $white;
+    font-family: $open-sans;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-weight: $regular;
+
+    &__nav {
+        padding: 1rem;
+    }
+    
+}
